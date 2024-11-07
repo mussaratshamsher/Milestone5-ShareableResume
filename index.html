@@ -1,0 +1,113 @@
+
+
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Dynamic Resume Builder</title>  
+    <link rel="stylesheet" href="style.css">  
+</head>  
+<body>  
+     <div class="container"> 
+
+        <h1>Dynamic Resume Builder</h1>  
+        <form id="resume-form">
+
+ <div id ="section_1">
+    <fieldset>
+              <label for="userimage"> User Image:</label>
+             <input type="file" id="imageInput" placeholder="upload image" accept="image/" required> 
+            </fieldset> <br>
+               
+              <fieldset> 
+            <h2>Personal Information</h2>  
+            <label for="name"> Name:</label>  
+            <input type="text"  id="name" placeholder="enter name here" required>  
+<br>
+            <label for="email"> Email:</label>  
+            <input type="email"  id="email"  placeholder="enter mailing account" required>  
+<br>
+            <label for="phone">Phone:</label>  
+            <input type="tel" id="phone"  placeholder="enter phone here" required>  
+         </fieldset>
+            <br/>
+            <fieldset>
+                <h2>Social Links</h2>
+                <label for="links"></label>
+                <div id="links" contenteditable="true" required>  
+                    <ul>
+                        <li>  @facebook.com</li>
+                        <li>@LinkedIn.com</li>
+                        <li> @Instagram.com</li>
+                    </ul>
+                     
+                </div></fieldset> <br>
+            <fieldset>
+           <h2>About</h2>  
+           <label for="about">About me:</label>  
+            <textarea id="about"  placeholder="write about yourself" required></textarea>
+            
+          </fieldset> </div><br>
+         
+
+        <div id="section_2" >
+
+            <fieldset>
+            <h2>Career Objectives</h2>  
+            <label for="objectives"> Objectives:</label>  
+            <textarea id="objectives"  placeholder="enter your career objectives here" required ></textarea>  
+            </fieldset>    
+<br/>
+            <fieldset><h2>Experience</h2>  
+            <label for="experience">Experience:</label>  
+            
+            <div id="experience" contenteditable="true" required>  
+                <ul>  
+                    <li>Experience</li>  
+                      
+                </ul>  
+            </div>
+        </fieldset>  <br><fieldset>
+            <h2>Education</h2>  
+            <label for="education">Education:</label>  
+            <div id="education" contenteditable="true" required>  
+                <ul>  
+                    <li>Masters</li>
+                    <li>Bachleros</li>
+                    <li>Intermediate</li>  
+                </ul>  
+            </div> 
+</fieldset> <br>
+ <fieldset>
+            <h2>Skills</h2>
+            <label for="skills">Skills:</label>
+            <div id="skills" contenteditable="true" required>  
+                <ul>  
+                    <li>skill</li>
+                    <li></li>
+                    <li></li>  
+                </ul>  
+            </div>  </fieldset> <br>
+            
+
+            <button id="submit"><b>Generate </b></button> 
+
+        </div>
+
+        </form>  
+
+<br>
+</div>
+        <div id="resume" class="resume"> 
+               
+            <div id="resume-content" contenteditable="true"></div>  
+        </div>  
+    
+ 
+    <script src="script.js"></script>  
+    
+</body>  
+</html>
+
+
